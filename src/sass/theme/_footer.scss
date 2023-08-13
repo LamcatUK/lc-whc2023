@@ -4,9 +4,10 @@ footer {
     color: #fff;
     font-size: var(--fs-300);
     a {
-        color: #fff;
+        color: #fff !important;
+        font-weight: var(--fw-400) !important;
         &:hover {
-            color: var(--col-secondary-400);
+            color: var(--col-secondary-400) !important;
         }
     }
 

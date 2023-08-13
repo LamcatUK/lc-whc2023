@@ -21369,10 +21369,11 @@ footer {
   font-size: var(--fs-300);
 }
 footer a {
-  color: #fff;
+  color: #fff !important;
+  font-weight: var(--fw-400) !important;
 }
 footer a:hover {
-  color: var(--col-secondary-400);
+  color: var(--col-secondary-400) !important;
 }
 footer > .container-xl {
   border-bottom: 1px solid var(--col-secondary-400);
@@ -21744,7 +21745,7 @@ body .gform_wrapper .gform_footer button {
   border-radius: var(--border-sm);
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), color var(--transition);
 }
 @media (min-width: 576px) {
   .service_nav__card {
@@ -22028,13 +22029,18 @@ body {
   color: var(--text);
 }
 
+a:not(.btn) {
+  color: var(--col-primary-900);
+  font-weight: var(--fw-600);
+  text-decoration: none;
+}
+
 a {
-  color: var(--col-highlight-400);
   text-decoration: none;
   transition: color var(--transition);
 }
 a:hover {
-  color: var(--col-light-400);
+  color: var(--col-secondary-400);
 }
 
 a.noline {
