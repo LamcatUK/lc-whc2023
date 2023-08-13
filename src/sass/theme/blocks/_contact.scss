@@ -1,0 +1,19 @@
+.contact {
+    .fa-ul {
+        margin-left: 2rem;
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .fa-li {
+            color: var(--col-secondary-400);
+        }
+
+        a {
+            font-weight: var(--fw-600);
+            &:hover {
+                color: var(--col-secondary-400);
+            }
+        }
+
+    }
+}

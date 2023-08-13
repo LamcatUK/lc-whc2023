@@ -1,0 +1,46 @@
+footer {
+    background-color: var(--col-primary-900);
+    background: linear-gradient(45deg, var(--col-primary-900), var(--col-primary-200));
+    color: #fff;
+    font-size: var(--fs-300);
+    a {
+        color: #fff;
+        &:hover {
+            color: var(--col-secondary-400);
+        }
+    }
+
+    & > .container-xl {
+        border-bottom: 1px solid var(--col-secondary-400);
+    }
+
+    .logo {
+        display: block;
+        width: min(200px, 90vw);
+        margin-inline: auto;
+        @media (min-width:576px) {
+            margin-left: 0;
+        }
+    }
+
+    .menu {
+        list-style: none;
+        @media(min-width:992px) {
+            padding-inline-start: 0;
+        }
+    }
+
+    .fa-li {
+        color: var(--col-secondary-400);
+    }
+
+    .colophon {
+        padding-block: 0.5rem;
+        .container-xl {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: var(--fs-200);
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.parallax-mirror {
+    display: none;
+    @media (min-width:992px) {
+        display: block;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(45deg, var(--col-primary-900), transparent);
+        mix-blend-mode: multiply;
+    }
+}
+.quote_hero {
+    min-height: 500px;
+    padding-block: 1rem;
+    position: relative;
+    isolation: isolate;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    
+    
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(45deg, var(--col-primary-900), transparent);
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+    
+    @media (min-width:992px) {
+        background-image: none !important;
+        &::after {
+            display: none;
+        }
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 3rem;
+
+    &__content {
+        color: #fff;
+        p {
+            max-width: 60ch;
+        }
+        a {
+            font-weight: var(--fw-600);
+            &:hover {
+                color: var(--col-secondary-400);
+            }
+        }
+    }
+
+    &__quote {
+        background-color: hsl(var(--hsl-primary-100) / 0.25);
+        backdrop-filter: blur(4px);
+        padding: 1rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-radius: var(--border-sm);
+        box-shadow: 0 8px 32px 0 hsl(var(--hsl-primary-900), 0.37);
+        form {
+            font-size: var(--fs-300);
+        }
+        h2, .form-label {
+            color: #fff;
+        }
+        span[role="alert"],
+        .wpcf7-validation-errors,
+        .wpcf7-not-valid-tip {
+            background-color: firebrick;
+            color: white !important;
+            border-radius: var(--border-sm);
+            padding: 0.5rem !important;
+        }
+        .wpcf7-icon-wraning {
+            fill: #fff !important;
+        }
+
+        .wpcf7-list-item-label {
+            color: #fff;
+        }
+
+        form.invalid .wpcf7-response-output {
+            background-color: var(--col-secondary-400) !important;
+            color: #fff !important;
+            border: none !important;
+            border-radius: var(--border-sm) !important;
+        }
+        input[type=radio] {
+            @extend .form-check-input;
+        }
+
+        form strong {
+            display: inline-block;
+            padding-inline: 0.25rem;
+            font-weight: var(--fw-700);
+            color: #fff;
+        }
+    }
+}
