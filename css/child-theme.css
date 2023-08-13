@@ -22112,6 +22112,9 @@ a.anchor {
 .sidebar .active::before {
   color: var(--col-secondary-400);
 }
+.sidebar .active a {
+  color: var(--col-secondary-400) !important;
+}
 .sidebar ul {
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -22134,7 +22137,13 @@ a.anchor {
   position: relative;
   line-height: 2.5;
   font-weight: var(--fw-600);
-  color: var(--col-primary-400);
+  color: var(--col-primary-400) !important;
+}
+.sidebar li a {
+  color: var(--col-primary-400) !important;
+}
+.sidebar li a:hover {
+  color: var(--col-secondary-400) !important;
 }
 .sidebar li::before {
   content: "\f6d1";

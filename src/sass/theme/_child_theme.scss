@@ -119,6 +119,9 @@ a.anchor {
         &::before {
             color: var(--col-secondary-400);
         }
+        a {
+            color: var(--col-secondary-400) !important;
+        }
     }
     ul {
         padding-inline-start: 0;
@@ -135,7 +138,13 @@ a.anchor {
         position: relative;
         line-height: 2.5;
         font-weight: var(--fw-600);
-        color: var(--col-primary-400);
+        color: var(--col-primary-400) !important;
+        a {
+            color: var(--col-primary-400) !important;
+            &:hover {
+                color: var(--col-secondary-400) !important;
+            }
+        }
         &::before {
             content: "\f6d1";
             font-family: 'font awesome 6 free';
