@@ -21634,10 +21634,10 @@ body .gform_wrapper .gform_footer button {
   max-width: 60ch;
 }
 .quote_hero__content a {
-  font-weight: var(--fw-600);
+  color: #fff !important;
 }
 .quote_hero__content a:hover {
-  color: var(--col-secondary-400);
+  color: var(--col-secondary-400) !important;
 }
 .quote_hero__quote {
   background-color: hsl(var(--hsl-primary-100)/0.25);

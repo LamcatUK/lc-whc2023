@@ -50,9 +50,9 @@
             max-width: 60ch;
         }
         a {
-            font-weight: var(--fw-600);
+            color: #fff !important;
             &:hover {
-                color: var(--col-secondary-400);
+                color: var(--col-secondary-400) !important;
             }
         }
     }
