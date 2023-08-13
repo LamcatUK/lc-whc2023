@@ -8,8 +8,19 @@ if ($icon) {
 <section class="hero" style="background-image:url(<?=$img?>);">
     <div class="container-xl" data-aos="fade">
         <img class="hero__icon" src="<?=$icon?>" alt="">
-        <h1>
-            <?=get_field('title')?>
-        </h1>
+        <div>
+            <h1>
+                <?=get_field('title')?>
+            </h1>
+            <?php
+            if (get_field('intro')) {
+                ?>
+            <div class="fs-5 text-white">
+                <?=get_field('intro')?>
+            </div>
+            <?php
+            }
+?>
+        </div>
     </div>
 </section>

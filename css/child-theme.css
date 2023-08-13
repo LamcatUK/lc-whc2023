@@ -22168,7 +22168,11 @@ a.anchor {
   margin-inline: auto;
 }
 .sidebar_cta a {
+  color: #fff;
   font-weight: var(--fw-600);
+}
+.sidebar_cta a:hover {
+  color: var(--col-secondary-400);
 }
 
 /*

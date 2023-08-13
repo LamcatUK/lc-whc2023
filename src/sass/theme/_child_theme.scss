@@ -166,7 +166,11 @@ a.anchor {
     max-width: 400px;
     margin-inline: auto;
     a {
+        color: #fff;
         font-weight: var(--fw-600);
+        &:hover {
+            color: var(--col-secondary-400);
+        }
     }
 }
 
