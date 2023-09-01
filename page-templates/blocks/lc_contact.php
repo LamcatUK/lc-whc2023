@@ -1,6 +1,7 @@
 <section class="contact py-5">
     <div class="container-xl">
-        <h2><?=get_field('title')?></h2>
+        <h2 class="has-primary-400-color">
+            <?=get_field('title')?></h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="mb-4">

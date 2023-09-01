@@ -34,7 +34,7 @@
                 <div class="tabs__grid accordion-collapse collapse <?=$show?> d-lg-grid" aria-labelledby="heading<?=$slug?>" data-bs-parent="#tabsTabContent" id="collapse<?=$slug?>">
                     <img src="<?=wp_get_attachment_image_url(get_sub_field('image'),'large')?>" alt="" class="tabs__image">
                     <div class="tabs__content">
-                        <h3 class="h2"><?=get_sub_field('title')?></h3>
+                        <h3 class="h2 has-primary-400-color"><?=get_sub_field('title')?></h3>
                         <div class="mb-4"><?=get_sub_field('content')?></div>
                         <div class="tabs__buttons">
                         <?php
