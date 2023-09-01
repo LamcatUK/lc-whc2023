@@ -32,9 +32,11 @@ if (!preg_match('/X /', get_the_title($p))) {
     if ($comp) {
         echo $comp;
     }
+    ?>
+                        </div>
+                        <?php
 }
                         ?>
-                        </div>
                     </div>
                     <?php
                     }
