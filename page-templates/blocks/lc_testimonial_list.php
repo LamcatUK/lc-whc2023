@@ -11,24 +11,30 @@
             <div class="testimonial_list__content">
                 <?=get_field('testimonial', $p)?>
             </div>
+            <?php
+if (!preg_match('/X /', get_the_title($p))) {
+    ?>
             <div class="testimonial_list__title">
                 <?=get_the_title($p)?>
             </div>
             <div class="testimonial_list__subtitle">
                 <?php
-                $role = get_field('role', $p);
-            $comp = get_field('company', $p);
-            if ($role) {
-                echo $role;
-                if ($comp) {
-                    echo ' - ';
-                }
-            }
-            if ($comp) {
-                echo $comp;
-            }
-            ?>
+    $role = get_field('role', $p);
+    $comp = get_field('company', $p);
+    if ($role) {
+        echo $role;
+        if ($comp) {
+            echo ' - ';
+        }
+    }
+    if ($comp) {
+        echo $comp;
+    }
+    ?>
             </div>
+            <?php
+}
+            ?>
         </div>
         <?php
         }
