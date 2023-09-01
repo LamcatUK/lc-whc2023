@@ -1,18 +1,19 @@
 <section class="faqs py-5">
     <div class="container-xl">
-        <h2 class="mb-4"><?=get_field('title')?>
+        <h2 class="has-primary-400-color mb-4">
+            <?=get_field('title')?>
         </h2>
         <?php
     $accordion = random_str(5);
 
-        echo '<div itemscope="" itemtype="https://schema.org/FAQPage" id="accordion' .  $accordion . '" class="accordion accordion-flush">';
-        $counter = 0;
-        $show = 'show';
-        $collapsed = '';
-        while (have_rows('faqs')) {
-            the_row();
-            $ac = $accordion . '_' . $counter;
-            ?>
+            echo '<div itemscope="" itemtype="https://schema.org/FAQPage" id="accordion' .  $accordion . '" class="accordion accordion-flush">';
+            $counter = 0;
+            $show = 'show';
+            $collapsed = '';
+            while (have_rows('faqs')) {
+                the_row();
+                $ac = $accordion . '_' . $counter;
+                ?>
         <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion-item">
             <div class="accordion-head accordion-collapse <?=$collapsed?>"
                 itemprop="name" data-bs-toggle="collapse"
@@ -34,11 +35,11 @@
             </div>
         </div>
         <?php
-            $counter++;
-            $show = '';
-            $collapsed = 'collapsed';
-        }
-        echo '</div>';
-        ?>
+                $counter++;
+                $show = '';
+                $collapsed = 'collapsed';
+            }
+            echo '</div>';
+            ?>
     </div>
 </section>

@@ -34,7 +34,7 @@ foreach ($blocks as $block) {
             </div>
             <div class="col-lg-4 order-1 pt-5">
                 <div class="sidebar">
-                    <h3>Our Courier Services</h3>
+                    <h3 class="has-primary-400-color">Our Courier Services</h3>
                     <ul>
                         <?php
                     $thispage = get_the_permalink(get_the_ID());
