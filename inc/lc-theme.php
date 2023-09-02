@@ -113,7 +113,7 @@ remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
 
 //Custom Dashboard Widget
 add_action('wp_dashboard_setup', 'register_lc_dashboard_widget');
-function register_cb_dashboard_widget()
+function register_lc_dashboard_widget()
 {
     wp_add_dashboard_widget(
         'lc_dashboard_widget',
