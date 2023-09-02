@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package lc-hydronix
+ * @package lc-whc2023
  */
 
 // Exit if accessed directly.

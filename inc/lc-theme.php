@@ -112,24 +112,24 @@ remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
 remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
 
 //Custom Dashboard Widget
-add_action('wp_dashboard_setup', 'register_cb_dashboard_widget');
+add_action('wp_dashboard_setup', 'register_lc_dashboard_widget');
 function register_cb_dashboard_widget()
 {
     wp_add_dashboard_widget(
-        'cb_dashboard_widget',
-        'Chillibyte',
-        'cb_dashboard_widget_display'
+        'lc_dashboard_widget',
+        'Lamcat',
+        'lc_dashboard_widget_display'
     );
 }
 
-function cb_dashboard_widget_display()
+function lc_dashboard_widget_display()
 {
     ?>
 <div style="display: flex; align-items: center; justify-content: space-around;">
     <img style="width: 50%;"
         src="<?= get_stylesheet_directory_uri().'/img/lc-full.jpg'; ?>">
     <a class="button button-primary" target="_blank" rel="noopener nofollow noreferrer"
-        href="mailto:hello@lamcat.co.uk/">Contact</a>
+        href="mailto:hello@lamcat.co.uk">Contact</a>
 </div>
 <div>
     <p><strong>Thanks for choosing Lamcat!</strong></p>
