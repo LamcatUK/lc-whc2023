@@ -22233,6 +22233,9 @@ a.anchor {
   margin-right: 0.75rem;
 }
 
+.sidebar {
+  top: calc(var(--h-top) / 2);
+}
 .sidebar .active {
   color: var(--col-secondary-400);
 }

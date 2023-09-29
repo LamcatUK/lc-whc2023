@@ -33,7 +33,7 @@ foreach ($blocks as $block) {
 ?>
             </div>
             <div class="col-lg-4 order-1 pt-5">
-                <div class="sidebar">
+                <aside class="sidebar sticky-top">
                     <h3 class="has-primary-400-color">Our Courier Services</h3>
                     <ul>
                         <?php
@@ -54,7 +54,7 @@ while (have_rows('services', 'options')) {
                         </p>
                         <a href="/get-quote/" class="btn btn-secondary">Get a Quote</a>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
     </div>
