@@ -22060,7 +22060,6 @@ body .gform_wrapper .gform_footer button {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  aspect-ratio: 500/333;
   transition: all 0.5s ease;
   vertical-align: middle;
 }
