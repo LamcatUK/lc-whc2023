@@ -92,6 +92,15 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_gallery',
+            'title'				=> __('LC Gallery'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_gallery.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');
