@@ -1,0 +1,12 @@
+.badge_flow {
+    &__card {
+        height: calc(100px + 1rem) !important;
+        padding: 1rem;
+        img {
+            object-fit: contain;
+            margin-block: auto;
+            margin-inline: auto;
+            height: calc(100px - 1rem);
+        }
+    }
+}
